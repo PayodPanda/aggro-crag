@@ -2,7 +2,7 @@
 <html class="no-js" lang="">
     <head>
         <meta charset="utf-8">
-        <title>EzPzNdjGz Stab 5</title>
+        <title>EzPzNdjGz present AggroCrag</title>
 
         <!-- Font files -->
         <link href="https://fonts.googleapis.com/css?family=Source+Code+Pro|Source+Sans+Pro" rel="stylesheet">
@@ -11,22 +11,25 @@
         <script src="./js/jquery-1.12.0.min.js"></script>
         <script src="./js/three.min.js"></script>
         <script src="./js/d3.v4.min.js"></script>
-        
+
         <!-- Actual scripts and styling -->
 		<style>
-			body { margin: 0; overflow: hidden;}
+			body { margin: 0; overflow: hidden; font-family: 'Source Sans Pro', sans-serif;}
 			canvas { width: 100%; height: 100% }
-            html, body, main{
-                height: 100%;
-                width: 100%;
-            }
+      html, body, main { height: 100%; width: 100%; }
+      header { padding-top: 10px; padding-left: 10px; width: 100%; height: 32px; background: black; font-family: 'Source Code Pro', monospace; color: white; }
+      #emails { display: inline-block; position: relative; right: 10px; float:right; }
+      #emails>a { color:white; }
+      #emails>a:hover { background:red; }
 		</style>
 
         <script src="./js/cameraControls.js"></script>
     </head>
 
     <body>
-        <header></header>
+        <header>
+          AggroCrag <div id="emails"><a href="https://nsgrantham.github.io/">neal grantham</a> <a href="http://payodpanda.com">payod panda</a> <a href="https://www.zekefranklin.com/">zeke krautwurst</a></div>
+        </header>
         <main>
             <div id="visualization" style="display: inline-block;height:100%; width: 80%;">
                 <div id="container-main" style="height:80%; width:100%"></div>
@@ -92,7 +95,7 @@
                 <input type="range" id="animate-speed" min="0" max="50" step="1" value="10">
             </div>
         </main>
-        <footer></footer>        
+        <footer></footer>
 
         <!-- Actual scripts -->
         <script src="./js/mainVisualization.js"></script>
